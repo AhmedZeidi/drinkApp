@@ -10,6 +10,7 @@ const routes: Routes = [
   { path:'categorie/cocktails', component : CocktailListComponent },
   { path:'cocktail/detail', component : CocktailDetailsComponent },
   { path:'conctail/search', component : CocktailSearchComponent },
+  { path:'', redirectTo:'categories', pathMatch:'full'}
 ];
 
 @NgModule({
