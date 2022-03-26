@@ -9,6 +9,7 @@ import { CategoriesComponent } from './pages/categories/categories.component';
 import { CocktailListComponent } from './pages/cocktail-list/cocktail-list.component';
 import { CocktailDetailsComponent } from './pages/cocktail-details/cocktail-details.component';
 import { CocktailSearchComponent } from './pages/cocktail-search/cocktail-search.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CocktailSearchComponent } from './pages/cocktail-search/cocktail-search
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
