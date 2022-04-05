@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import axios from 'axios';
+import axios, { Axios } from 'axios';
 
 @Component({
   selector: 'app-categories',
@@ -12,23 +12,20 @@ categories:any = [];
 
   constructor() { }
 
-
   ngOnInit(): void {
     this.getCategories();
   }
 
   getCategories(){
-    axios.get("https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list")
+    axios.get('https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list')
       .then (response =>{
-        console.log(response.data.drinks);
+        console.log('response drinks',response.data.drinks);
         this.categories = response.data.drinks;
-
+        console.log('categories',this.categories);
 
       })
       .catch(e =>{
-        console.log(e);
+        console.log('error getCategories',e);
       })
-
   }
-
 }

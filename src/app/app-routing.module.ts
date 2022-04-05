@@ -7,7 +7,7 @@ import { CocktailSearchComponent } from './pages/cocktail-search/cocktail-search
 
 const routes: Routes = [
   { path:'categories', component : CategoriesComponent },
-  { path:'categorie/cocktails', component : CocktailListComponent },
+  { path:'categorie/cocktails/:nomC', component : CocktailListComponent },
   { path:'cocktail/detail', component : CocktailDetailsComponent },
   { path:'conctail/search', component : CocktailSearchComponent },
   { path:'', redirectTo:'categories', pathMatch:'full'}

@@ -10,6 +10,8 @@ import { CocktailListComponent } from './pages/cocktail-list/cocktail-list.compo
 import { CocktailDetailsComponent } from './pages/cocktail-details/cocktail-details.component';
 import { CocktailSearchComponent } from './pages/cocktail-search/cocktail-search.component';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -19,12 +21,13 @@ import { FormsModule } from '@angular/forms';
     CategoriesComponent,
     CocktailListComponent,
     CocktailDetailsComponent,
-    CocktailSearchComponent
+    CocktailSearchComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
