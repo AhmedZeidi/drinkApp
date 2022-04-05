@@ -8,7 +8,8 @@ import axios, { Axios } from 'axios';
 })
 export class CategoriesComponent implements OnInit {
 
-categories:any = [];
+  categories:any = [];
+  nCategorie:any;
 
   constructor() { }
 
@@ -26,5 +27,17 @@ categories:any = [];
       .catch(e =>{
         console.log('error getCategories',e);
       })
+  }
+
+  validCategorie(categorie: any){
+    if (categorie.indexOf("/") == -1){
+      // this.nCategorie = categorie.replace('/',' ');
+      // console.log(this.nCategorie);
+      return true
+
+    }else{
+      return false
+    }
+
   }
 }
