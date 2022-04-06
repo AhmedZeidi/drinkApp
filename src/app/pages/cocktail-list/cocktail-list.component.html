@@ -5,7 +5,7 @@
     <div class="card col-3 m-2" style="width: 10rem;" *ngFor="let cocktail of cocktails">
       <img class="card-img-top" src="{{cocktail.strDrinkThumb}}">
       <div class="card-body">
-        <h6 class="text-center">{{cocktail.strDrink}}</h6>
+        <a routerLink="/cocktail/detail/{{cocktail.idDrink}}"><h6 class="text-center">{{cocktail.strDrink}}</h6></a>
       </div>
     </div>
   </div>

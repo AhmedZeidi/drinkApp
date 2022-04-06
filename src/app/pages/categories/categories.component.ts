@@ -9,7 +9,7 @@ import axios, { Axios } from 'axios';
 export class CategoriesComponent implements OnInit {
 
   categories:any = [];
-  nCategorie:any;
+  
 
   constructor() { }
 
